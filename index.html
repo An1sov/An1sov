@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="main-title">Portfolio</title>
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <!--custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    
+    
+
+
+    <!--SIDEBAR-->
+    <aside class="sidebar" data-sidebar>
+      <ul class="leng-list">
+        <li>
+          <i class="leng-en leng-link">
+            <button data-btn="en" class="translate aside-btn">
+              <img src="./assets/images/icons/united-kingdom-flag-icon.png" alt="united-kingdom-flag">
+            </button>
+          </i>
+        </li>
+        <li>
+          <i class="leng-ua leng-link">
+            <button data-btn="ua" class="translate aside-btn">
+              <img src="./assets/images/icons/ukraine-flag-icon.png" alt="ukraine-flag">
+            </button>
+          </i>
+        </li>
+        <li>
+          <i class="leng-pl leng-link">
+            <button data-btn="pl" class="translate aside-btn">
+              <img src="./assets/images/icons/poland-flag-icon.png" alt="poland-flag">
+            </button>
+          </i>
+        </li>
+      </ul>
+  
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Anisov Oleksandr" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" data-lang="sidebar-name" title="Anisov Oleksandr">Anisov Oleksandr</h1>
+          <p class="title" data-lang="sidebar-title">Visual Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn data-lang="sidebar-btn">
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="sanechek.anisov@gmail.com" class="contact-link">sanechek.anisov@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang="sidebar-phone">Phone</p>
+              <a href="tel: Soon apdate!" class="contact-link" data-lang="sidebar-link" >Soon apdate!<!--+1 (213) 352-2795--></a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang="sidebar-birthday">Birthday</p>
+              <time datetime="20007-11-24" data-lang="sidebar-birthday-datetime">November 24, 2007</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang="sidebar-location">Location</p>
+              <address data-lang="sidebar-address">Poland</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+        
+          <li class="social-item">
+            <a href="https://www.upwork.com/freelancers/~01e03e572825bf079a?mp_source=share" class="social-link">
+              <i class="ri-profile-line"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://x.com/rPZCYADE4t14083?t=r1IfvhxcUSeNIxJLFKA5Jw&s=09" class="social-link">
+              <i class="ri-twitter-x-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <!--NAVBAR-->
+      <nav class="navbar" translate="no">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link page active" data-page="about" data-nav-link data-lang="navbar-about">About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link page" data-page="resume" data-nav-link data-lang="navbar-resume">Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link page" data-page="portfolio" data-nav-link  data-lang="navbar-portfolio">Portfolio</button>
+          </li>
+          <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>-->
+          <li class="navbar-item">
+            <button class="navbar-link page" data-page="contact" data-nav-link data-lang="navbar-contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--ABOUT-->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title " data-lang="about-me">About me</h2>
+        </header>
+        <section class="about-text">
+          <p class="modal-rol-all"><img src="./assets/images/icon-Pl.svg" alt="PL"><span data-lang="about-me-text-1">I relocated and work from Poland.</span> </p>
+          <p data-lang="about-me-text-2">Welcome!</p>
+          <p data-lang="about-me-text-3">
+            I am a student studying to become an information processing operator, and my path is a combination of technology, data and the pursuit of excellence.
+            I already know how to collect, analyse, structure and present data using a wide range of tools that allow me to be efficient and creative.
+          </p>
+          <p>
+            <span data-lang="about-me-text-4">My skills include:</span>
+            <br>
+            <span data-lang="about-me-text-5">✅Office applications: advanced work with Word, Excel, PowerPoint, Visio and Acrobat Pro.</span>
+            <span data-lang="about-me-text-6">✅Design and multimedia: confident use of Canva Clipchamp to create visual content and Photoshop, Illustrator and GIMP for image editing and graphic design.</span>
+            <span data-lang="about-me-text-7">✅Web development: knowledge of HTML and CSS, which allows me to create basic web pages or adapt templates to specific needs.</span>
+            <span data-lang="about-me-text-8">✅Working with AI: I have experience in using artificial intelligence to automate routine tasks and create content that saves time and opens up new opportunities.</span>
+            <span data-lang="about-me-text-9">✅Attention to detail: I always check my work to avoid mistakes and find the best solutions that save time and resources.</span>
+            <br>
+            <span data-lang="about-me-text-10">💠My goal is to gain hands-on experience that will allow me to combine technical skills with a creative approach, whether it's creating informative presentations or editing images.</span>
+            <br>
+            <div style="display: flex; align-items: center; gap: 4px;" >
+              <span data-lang="about-me-text-11">💠Direct link to the profile </span> 
+              <a class="text-a" data-lang="about-me-text-11-a" style="text-decoration: underline;" href="https://www.upwork.com/freelancers/~01e03e572825bf079a?mp_source=share"><b>Upwork</b></a>
+            </div>
+          </p>
+        </section>
+        <section class="service">
+          <h3 class="h3 service-title" data-lang="service-do">What I do</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box ">
+                <img src="./assets/images/icon-Information Processing.svg" alt="Information Processing icon" width="40" >
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang="service-item-title-1">Information Processing</h4>
+                <p class="service-item-text" data-lang="service-item-text-1">
+                  Efficient collection, analysis, and presentation of data using modern digital tools.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box ">
+                <img src="./assets/images/icon-Vector graphics.svg" alt="Vector graphics icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang="service-item-title-2">Vector graphics</h4>
+                <p class="service-item-text" data-lang="service-item-text-2">
+                  Image vectorisation in Adobe Illustrator — precise and high-quality graphic processing tailored to client requirements.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Visual content.svg" alt="Visual content icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang="service-item-title-3">Visual content</h4>
+                <p class="service-item-text" data-lang="service-item-text-3">
+                  Create presentations, videos, and graphics in Canva, Clipchamp, Photoshop, and GIMP...
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Web Development.svg" alt="Vector graphics icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-lang="service-item-title-4">Web Development</h4>
+                <p class="service-item-text" data-lang="service-item-text-4">
+                  Basic creation and adaptation of web pages using HTML and CSS.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--Resume-->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title" data-lang="resume-title">Resume</h2>
+        </header>
+
+        <section class="skill">
+          <h3 class="h3 skills-title" data-lang="resume-skill-title">Languages Skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang="skill-language-1">English:</h5>
+                <data value="55" data-lang="skill-language-1-data">Conversational, A2-B1</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang="skill-language-2">Ukrainian:</h5>
+                <data value="87" data-lang="skill-language-2-data">Native, C1-C2</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang="skill-language-3">Russian:</h5>
+                <data value="75" data-lang="skill-language-3-data">Bilingual, C1</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" data-lang="skill-language-4">Polish:</h5>
+                <data value="30" data-lang="skill-language-4-data">Basic, A1-A2</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" data-lang="timeline-title-education">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-lang="education-academy">University or academy</h4>
+              <span data-lang="education-academy-year">Soon apdate!</span>
+              <p class="timeline-text"></p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-lang="vocational-school">Vocational School</h4>
+              <div class="timeline-add">
+                <span data-lang="vocational-school-year">2023-Present</span>
+                <span><i data-lang="vocational-school-name">State Educational Institution ‘Mikhailovskoye Higher Vocational School’</i></span>
+              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" data-lang="high-school">High School (Lyceum)</h4>
+              <span data-lang="high-school-year">2014 — 2023</span>
+              <span><i data-lang="high-school-name">Lyceum №15 of the Melitopol City Council of Zaporizhzhia Oblast</i></span>
+              <p class="timeline-text" data-lang="text-high-school">
+                Completed 9 grades at a Lyceum with honours.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3" data-lang="timeline-title-experience">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item onli">
+              <h4 class="h4 timeline-item-title" data-lang="experience-item">Soon apdate!</h4>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!--Portfolio-->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title" data-lang="portfolio-article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list" translate="no">
+            <li class="filter-item">
+              <button class="active" data-filter-btn data-filter="all" data-lang="portfolio-filter-1">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-filter="vector graphics" data-lang="portfolio-ffilter-2">Vector Graphics</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-filter="presentations" data-lang="portfolio-ffilter-3">Presentations</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-filter="marketing materials" data-lang="portfolio-ffilter-4">Marketing Materials</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-filter="web development" data-lang="portfolio-ffilter-5">Web development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn data-filter="ai-enhanced-web" data-lang="portfolio-ffilter-6">AI-Enhanced Web</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box" translate="no">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value data-lang="portfolio-select-title">Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item="all" data-lang="portfolio-select-1">All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="vector graphics" data-lang="portfolio-select-2">Vector Graphics</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="presentations" data-lang="portfolio-select-3">Presentations</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="marketing materials" data-lang="portfolio-select-4">Marketing Materials</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="web development" data-lang="portfolio-select-5">Web development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="ai-enhanced-web" data-lang="portfolio-select-6">AI-Enhanced Web</button>
+              </li>
+            </ul>
+            
+          </div>
+
+          <!-- Під категорії -->
+          <ul class="filter-list sub-filter-list" id="ai-sub-filters">
+            <li class="filter-item">
+              <button class="active" data-subfilter-btn data-subfilter="all">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-subfilter-btn data-subfilter="adaptively">Adaptively</button>
+            </li>
+            <li class="filter-item">
+              <button data-subfilter-btn data-subfilter="оnly-for-pc">Only for PC</button>
+            </li>
+            <li class="filter-item">
+              <button data-subfilter-btn data-subfilter="for-fun">For Fun & work_school</button>
+            </li>
+          </ul>
+
+          <ul class="filter-list sub-filter-list" id="marketing-sub-filters">
+            <li class="filter-item">
+              <button class="active" data-subfilter-btn data-subfilter="all">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-subfilter-btn data-subfilter="brochures">Brochures</button>
+            </li>
+            <li class="filter-item">
+              <button data-subfilter-btn data-subfilter="flyers">Flyers</button>
+            </li>
+          </ul>
+
+            
+          <!-- Portfolio -->
+          <ul class="project-list">
+
+            <!-- Об'яви -->
+            <li class="project-item active full-width" data-filter-item data-category="presentations">
+              <div class="project-comment">
+                <h4>Активна розробка</h4>
+                <p>
+                  Ця сторінка знаходиться в активній розробці, <b>вибачте за незручності</b>.
+                </p>
+              </div>
+            </li>
+          <!--
+            <li class="project-item active full-width" data-filter-item data-category="ai-enhanced-web">
+              <div class="project-comment">
+                <h4>Subcategory: Icon Sets</h4>
+                <p>
+                  Food and beverage iconography designed for mobile applications.
+                </p>
+              </div>
+            </li>!
+          -->
+
+
+            <!-- Oleksandr Usyk --> <!--Вікно_1-->
+            <li class="project-item  active" data-filter-item data-category="marketing materials" data-subcategory="brochures">
+              <div class="js-open-modal" data-modal="1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="brochure" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-usyk">Design of the brochure "Oleksandr Usyk: Boxing Legend"</h3>
+                <p class="project-category" data-lang="project-category-brochure" >Brochure</p>
+              </div>
+            </li>
+            <!-- Raster-to-vector conversion -->  <!--Вікно_8-->
+            <li class="project-item  active" data-filter-item data-category="vector graphics">
+              <div class="js-open-modal" data-modal="8">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="vector graphics" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-conversion">Raster-to-vector conversion</h3>
+
+                <p class="project-category" data-lang="project-category-vector">Vector Graphics</p>
+
+              </div>
+            </li>
+            <!-- Website 'EtnoShop' --> <!--Вікно_2-->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <div class="js-open-modal" data-modal="2">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="Website 'EtnoShop'" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-website-1">Website 'EtnoShop'</h3>
+
+                <p class="project-category" data-lang="project-category-web">Web development</p>
+
+              </div>
+            </li>
+            <!-- Satellite systems --> <!--Вікно_3-->
+            <li class="project-item  active" data-filter-item data-category="presentations">
+              <div class="js-open-modal" data-modal="3">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="presentations" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-presentations-1" >Modern satellite communication. Satellite systems.</h3>
+
+                <p class="project-category" data-lang="project-category-presentations">Presentations</p>
+
+              </div>
+            </li>
+            <!-- Zamość --> <!--Вікно_4-->
+            <li class="project-item  active" data-filter-item data-category="marketing materials" data-subcategory="flyers">
+              <div class="js-open-modal" data-modal="4">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="marketing materials" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-flyer-1">Welcome to Zamość: A Renaissance Gem in Poland</h3>
+
+                <p class="project-category" data-lang="project-category-flyer" >Flyer</p>
+
+              </div>
+            </li>
+            <!-- Transforming logo VPU --> <!--Вікно_5-->
+            <li class="project-item  active" data-filter-item data-category="vector graphics">
+              <div class="js-open-modal" data-modal="5">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="vector graphics" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-conversion-2">Transforming logo</h3>
+
+                <p class="project-category" data-lang="project-category-vector">Vector Graphics</p>
+
+              </div>
+            </li>
+            <!-- TRUSTEE PLUS --> <!--Вікно_6-->
+            <li class="project-item  active" data-filter-item data-category="presentations">
+              <div class="js-open-modal" data-modal="6">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.jpg" alt="presentations" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-presentations-2">TRUSTEE PLUS corporate identity</h3>
+
+                <p class="project-category" data-lang="project-category-presentations">Presentations</p>
+
+              </div>
+            </li>
+            <!-- Raster-to-vector conversion_2 -->  <!--Вікно_9-->
+            <li class="project-item  active" data-filter-item data-category="vector graphics">
+              <div class="js-open-modal" data-modal="9">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.jpg" alt="vector graphics" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-conversion">Raster-to-vector conversion</h3>
+
+                <p class="project-category" data-lang="project-category-vector">Vector Graphics</p>
+
+              </div>
+            </li>
+            <!-- Mikhailivske VPU --> <!--Вікно_7-->
+            <li class="project-item  active" data-filter-item data-category="marketing materials" data-subcategory="brochures">
+              <div class="js-open-modal" data-modal="7">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.jpg" alt="marketing materials" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-brochure-vpu" >Promotional Brochure Design for Mikhailivske VPU</h3>
+
+                <p class="project-category" data-lang="project-category-brochure">Brochure</p>
+
+              </div>
+            </li>
+            <!-- Raster-to-vector conversion_3 -->  <!--Вікно_10-->
+            <li class="project-item  active" data-filter-item data-category="vector graphics">
+              <div class="js-open-modal" data-modal="10">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-10.jpg" alt="vector graphics" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-lang="project-conversion-food">Food Icons</h3>
+
+                <p class="project-category" data-lang="project-category-vector" >Vector Graphics</p>
+
+              </div>
+            </li>
+
+            <!--нова історія-->
+            <!-- Cryptography: the basis of cryptocurrencies --> <!--Вікно_11  ai-enhanced-web-1-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="adaptively">
+              
+              <div data-modal="11"><a href="https://cryptography-cryptocurrencies.netlify.app" target="_blank">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+          
+                  <img src="./assets/images/project-11/photo-1.png" alt="AI-Enhanced Web" loading="lazy">
+                </figure>
+          
+                <h3 class="project-title" data-lang="ai-enhanced-web-1">Cryptography: the basis of cryptocurrencies</h3>
+          
+                <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+          
+                </a>
+              </div>
+            </li>
+
+            <!-- How to create a strong password and where to store it --> <!--Вікно_12 ai-enhanced-web-2-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="оnly-for-pc">
+            
+              <div data-modal="12"><a href="https://referat-an1sov.neocities.org" target="_blank">
+            
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+            
+                    <img src="./assets/images/project-12.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+            
+                  <h3 class="project-title" data-lang="ai-enhanced-web-2">How to create a strong password and where to store it</h3>
+            
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+            
+                </a>
+              </div>
+            </li>
+            <!-- History of information security software development --> <!--Вікно_13 ai-enhanced-web-3-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="adaptively">
+            
+              <div data-modal="13"><a href="https://history-information-security-software.netlify.app/" target="_blank">
+            
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+            
+                    <img src="./assets/images/project-13.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+            
+                  <h3 class="project-title" data-lang="ai-enhanced-web-3">History of information security software development</h3>
+            
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+            
+                </a>
+              </div>
+            </li>
+            <!-- Борис Бобер  --> <!--Вікно_14 ai-enhanced-web-4-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="for-fun">
+            
+              <div data-modal="13"><a href="https://boberkyrva.netlify.app" target="_blank">
+            
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+            
+                    <img src="./assets/images/Знімок екрана 2025-11-16 220338.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+            
+                  <h3 class="project-title" data-lang="ai-enhanced-web-4">Personal website of Boris Bober</h3>
+            
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+            
+                </a>
+              </div>
+            </li>
+            <!-- Mini bisness card  --> <!--Вікно_15 ai-enhanced-web-5-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="for-fun">
+            
+              <div data-modal="13"><a href="https://mini-bisness-card.netlify.app" target="_blank">
+            
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+            
+                    <img src="./assets/images/Знімок екрана 2025-11-17 111713.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+            
+                  <h3 class="project-title" data-lang="ai-enhanced-web-5">Mini bisness card</h3>
+            
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+            
+                </a>
+              </div>
+            </li>
+            <!-- My Dream Trip - TOKYO DRIFT --> <!--Вікно_16 ai-enhanced-web-6-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="оnly-for-pc" >
+            
+              <div data-modal="12"><a href="https://tokyo-drift.netlify.app" target="_blank">
+            
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+            
+                    <img src="./assets/images/Знімок екрана 2025-11-26 214212.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+            
+                  <h3 class="project-title" data-lang="ai-enhanced-web-6">My Dream Trip - TOKYO DRIFT</h3>
+            
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+            
+                </a>
+              </div>
+            </li>
+            <!-- History --> <!--Вікно_17 ai-enhanced-web-7-->
+            <li class="project-item  active" data-filter-item data-category="ai-enhanced-web" data-subcategory="adaptively">
+
+              <div data-modal="14"><a href="https://mvs-secret.netlify.app" target="_blank">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/Знімок екрана 2026 history.png" alt="AI-Enhanced Web" loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title" data-lang="ai-enhanced-web-7">Provincial mirror</h3>
+
+                  <p class="project-category" data-lang="portfolio-select-6">AI-Enhanced Web</p>
+
+                </a>
+              </div>
+            </li>
+
+            <!-- Архів-презентації --> 
+            <li class="project-item active full-width" data-filter-item data-category="presentations">
+            
+              <div class="archive-container" id="presentation-archive">
+            
+                <h4 class="archive-title">Просто архів робіт (Archive) для себе</h4>
+            
+                <ul class="archive-list-new">
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Соціальні гарантії та соціальний захист на підприємстві</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Екологічні проблеми атомної енергетики</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Історія розвитку астрономії в Україні</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Основи паяння, інструменти та пристосування для пайки</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">Canva</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Театр Шекспірівської Доби</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span></span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-serious">Serious</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                
+                  <li class="archive-divider">
+                    <span>School Projects</span>
+                  </li>
+                
+                
+                  <li>
+                    <a href="#" target="_blank"
+                      rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Давньогрецький театр. Сюжет “Прометея закутого”</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Екологічні проблеми Чорного моря</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Міні-проет “Вплив людської діяльності на степові екосистеми”.</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Органічний світ і природні ресурси Тихого океану</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Використання хімічних явищ у художній творчості й народних ремеслах</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Інформаційно-пошуковий проект на тему “Використання енергії природних джерел”</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span>Популяція. Пристосування до умов середовищь</span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span></span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="archive-item-title">
+                        <ion-icon name="link-outline"></ion-icon>
+                        <span></span>
+                      </div>
+                      <div class="archive-tags-wrapper">
+                        <span class="archive-tag-type is-school">School</span>
+                        <span class="archive-format">PPTX</span>
+                      </div>
+                    </a>
+                  </li>
+                
+                </ul>
+            
+                <button class="archive-toggle-btn" data-archive-toggle>
+                  <span data-lang="archive-show-all">Показати всі</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+            
+              </div>
+            </li>
+
+
+          </ul>
+        </section>
+
+        <!-- Модальні вікна -->
+        <div class="overlay js-overlay-modal">
+          <!-- Вікно_1 ГОТОВО -->
+          <div class="modal" data-modal="1">
+            <div class="modal-header">
+              <h1 data-lang="project-usyk" >Design of the brochure "Oleksandr Usyk: Boxing Legend"</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-1">Graphic Designer & Content Analyst</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-1-text-1">This project was about showcasing Oleksandr Usyk awesome boxing career through a cool brochure design, 
+                  focusing on his journey, big wins, and the epic Usyk vs. Fury fight. I put together a vibrant layout with 
+                  highlights and images to show off Usyk skills and energy in the ring.</span> 
+                  <br>
+                  <span data-lang="modal-1-text-2">
+                    It’s a fun personal project to cheer for Usyk and inspire other boxing fans!
+                  </span> 
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div data-lang="modal-skills-canva">Canva</div>
+                  <div data-lang="modal-skills-photo">Adobe Photoshop</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-1">Published on Apr 10, 2025</p>
+              </div>
+
+              <div class="modal-right">
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_1" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-1/photo-1.jpg" alt="" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-1" >Oleksandr Usyk.pdf</span>
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-1/photo-1.jpg" alt="photo-1">
+                  <img src="./assets/images/project-1/photo-2.jpg" alt="photo-2">
+                  <img src="./assets/images/project-1/photo-3.jpg" alt="photo-3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_2 ГОТОВО --> 
+          <div class="modal" data-modal="2">
+            <div class="modal-header">
+              <h1 data-lang="modal-project-etnoshop" >Website 'EtnoShop'. Defence of the project.</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-2">Front-end developer and designer</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-2-text-1">
+                    The project was developed for the IT_TEEN_ZP competition in the WEB FRONT-END nomination - an online store of Ukrainian national clothes.
+                  </span>
+                  <br>
+                  <span data-lang="modal-2-text-2">
+                    Goal: to create a user-friendly, responsive website with an attractive design.
+                  </span>
+                  <br>
+                  <span data-lang="modal-2-text-3">
+                    I developed the original design and code myself, structuring the navigation, choosing typography and illustrations that reflect Ukrainian culture.
+                  </span>
+                  <br>
+                  <span data-lang="modal-2-text-4">
+                    The site is adapted for mobile devices and tested on various browsers.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div data-lang="modal-skills-html">HTML5</div>
+                  <div data-lang="modal-skills-css" >CSS</div>
+                  <div data-lang="modal-skills-figma">Figma</div>
+                  <div data-lang="modal-skills-photo">Adobe Photoshop</div>
+                  <div data-lang="modal-skills-сanva">Canva</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-2">Published on Mar 30, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                
+                  <a href="https://etnoshop.netlify.app/" target="_blank" class="modal-file-link">
+                    <span class="file-link">etnoshop.netlify.app</span>
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_2" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-2/photo-2.png" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-2">Defence of the project 'EtnoShop'.pdf</span>
+                </div>
+                
+                <div class="modal-img">
+                  <img src="./assets/images/project-2/photo-1.png" alt="photo-1">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_3 ГОТОВО --> 
+          <div class="modal" data-modal="3">
+            <div class="modal-header">
+              <h1 data-lang="modal-project-satellite">Research project: Modern satellite communication. Satellite systems.</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-1">Graphic Designer & Content Analyst</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-3-text-1">
+                    This personal research project aimed to explore modern satellite communication systems and their applications. I gathered and analyzed information from various sources, focusing on satellite technologies, their design, and capabilities like global connectivity.
+                  </span>
+                  <br>
+                  <span data-lang="modal-3-text-2">
+                    The project was in Ukrainian, but I translated it into English for my portfolio.
+                  </span>
+                  <br>
+                  <span data-lang="modal-3-text-3">
+                    The impact was a deeper understanding of how satellite networks enhance communication, benefiting both personal knowledge and potential future applications in tech-driven fields.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div data-lang="modal-skills-photo">Adobe Photoshop</div>
+                  <div data-lang="modal-skills-canva">Canva</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-2">Published on Mar 30, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                
+                  <a href="https://www.canva.com/design/DAGjMzrkvCc/QQKbjwg--ylCkcp0XDZ5bw/view?utm_content=DAGjMzrkvCc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he5deba064f" target="_blank" class="modal-file-link">
+                    <span class="file-link" data-lang="modal-link-name-1" >View the presentation in canva.com</span>
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_8" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-3.jpg" alt="" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-3">Research project: Modern satellite communication. Satellite systems.pdf</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_4 ГОТОВО --> 
+          <div class="modal" data-modal="4">
+            <div class="modal-header">
+              <h1 data-lang="project-flyer-1" >Welcome to Zamość: A Renaissance Gem in Poland</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol" >My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-1">Graphic Designer & Content Analyst</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-4-text-1">
+                    The client provided text about Zamość, a UNESCO-listed Polish city, highlighting its Renaissance architecture and history. 
+                  </span>
+                    <br>
+                  <span data-lang="modal-4-text-2">
+                    My task was to design an A4 based on this content. I analyzed the text, emphasized key attractions (Rynek Wielki, Cathedral, Fortress, Synagogue), and structured them into an engaging layout.
+                  </span>
+                    <br>
+                  <span data-lang="modal-4-text-3">
+                    The goal was to attract tourists by showcasing Zamość’s unique heritage.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div data-lang="modal-skills-canva">Canva</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-2">Published on Mar 30, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_6" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-4/photo-2.jpg" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-3">Welcome to Zamość: A Renaissance Gem in Poland.pdf</span>
+                </div>
+                
+                <div class="modal-img">
+                  <img src="./assets/images/project-4/photo-1.jpg" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-4/photo-3.jpg" alt="photo-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_5 ГОТОВО --> 
+          <div class="modal" data-modal="5">
+            <div class="modal-header">
+              <h1 data-lang="project-conversion-2">Transforming logo</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol" >My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-3">Logo Design & Vector Conversion</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-5-text-1">
+                    Raster-to-vector conversion. 
+                  </span>
+                  <br>
+                  <span data-lang="modal-5-text-2">
+                    Transforming a low-resolution raster image into a clean, scalable vector version. 
+                  </span>
+                  <br>
+                  <span data-lang="modal-5-text-3">
+                    The new emblem maintains the original concept but enhances clarity, detail, and professionalism. The updated design is now suitable for both digital and print use.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Adobe Illustrator</div>
+                  <div>VectorWorks</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-3">Published on Apr 15, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <a href="https://drive.google.com/uc?export=download&id=1Cs7uTjFRtjMXDffEiEVdDVDIVCjOa0JM" target="_blank" class="modal-file-link">
+                  <span class="file-link" data-lang="modal-file-name-4">Download file (emblem.ai)</span>
+                  <i class="ri-file-download-line"></i>
+                </a>
+                <div class="modal-img">
+                  <img src="./assets/images/project-5/photo-1.jpg" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-5/photo-2.png" alt="photo-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_6 ГОТОВО --> 
+          <div class="modal" data-modal="6">
+            <div class="modal-header">
+              <h1 data-lang="project-presentations-2" >TRUSTEE PLUS corporate identity</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-4">Graphic Designer</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-6-text-1">
+                    I designed a presentation analyzing TRUSTEE PLUS’s corporate identity for a student’s educational project. 
+                  </span>
+                  <br>
+                  <span data-lang="modal-6-text-2">
+                    My task was to create a structured, visually engaging piece exploring the logo, colors, and typography, showing how this modern entity conveys trust and professionalism. 
+                  </span>
+                    <br>
+                  <span data-lang="modal-6-text-3">
+                    The slides were clear, logical, and illustrated to meet educational goals and design standards, making the content accessible and compelling.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Presentation Design</div>
+                  <div data-lang="modal-skills-сanva">Canva</div>
+                  <div>PowerPoint Presentation</div>
+                  <div>Deep Analysis</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-4">Published on Mar 28, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_3" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-6/photo-1.jpg" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-5">TRUSTEE PLUS corporate identity.pdf</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_7 ГОТОВО --> 
+          <div class="modal" data-modal="7">
+            <div class="modal-header">
+              <h1 data-lang="project-brochure-vpu">Promotional Brochure Design for Mikhailivske VPU</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-1">Graphic Designer & Content Analyst</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-7-text-1">
+                    Designed a modern, informative trifold brochure for Mikhailivske Vocational School to promote its educational programs, values, and training directions. Focused on creating a clear visual hierarchy, incorporating school branding, and ensuring readability. 
+                  </span>
+                  <br>
+                  <span data-lang="modal-7-text-2">
+                    The brochure serves both digital and print purposes, targeting students and parents. The final product supports the institution’s mission to attract future professionals.
+                  </span>
+                  <br>
+                </p>
+                <p class="modal-rol" data-lang="modal-skills">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Adobe Photoshop</div>
+                  <div>Canva</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-1">Published on Apr 10, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <div class="modal-file">
+                  <a href="https://an1sov-file-storegs.netlify.app/doc_5" target="_blank">
+                    <figure class="modal-figure-img">
+                      <div class="modal-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                    
+                    <img src="./assets/images/project-7/photo-4.jpg" class="file-thumb">
+                  </figure>
+                  </a>
+                  <span class="file-name" data-lang="modal-file-name-6" >Promotional Brochure Design for Mikhailivske VPU.pdf</span>
+                </div>
+
+                <div class="modal-img">
+                  <img src="./assets/images/project-7/photo-1.jpg" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-7/photo-2.jpg" alt="photo-2">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-7/photo-3.jpg" alt="photo-3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_8 ГОТОВО --> 
+          <div class="modal" data-modal="8">
+            <div class="modal-header">
+              <h1 data-lang="project-conversion">Raster-to-vector conversion</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-5">Graphic Designer & Vector Conversion</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Adobe Illustrator</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-3">Published on Apr 15, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <a href="https://drive.google.com/uc?export=download&id=1AG18We-mym9JwfOwLLwvIq1HMDmeSXxm" target="_blank" class="modal-file-link">
+                  <span class="file-link" data-lang="modal-file-name-7">Download file (picture.ai)</span>
+                  <i class="ri-file-download-line"></i>
+                </a>
+                <div class="modal-img">
+                  <img src="./assets/images/project-8/photo-1.png" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-8/photo-2.svg" alt="photo-2">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-8/photo-3.svg" alt="photo-3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_9 ГОТОВО --> 
+          <div class="modal" data-modal="9">
+            <div class="modal-header">
+              <h1 data-lang="project-conversion">Raster-to-vector conversion</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-5">Graphic Designer & Vector Conversion</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Adobe Illustrator</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-5">Published on Apr 30, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <a href="https://drive.google.com/uc?export=download&id=1ktPXPksJlBmfD-YUqzQt7Mjec-s_TN4G" target="_blank" class="modal-file-link">
+                  <span class="file-link" data-lang="modal-file-name-8">Download file (Seaside-Vending-Co.ai)</span>
+                  <i class="ri-file-download-line"></i>
+                </a>
+                <div class="modal-img">
+                  <img src="./assets/images/project-9/photo-1.jpg" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-9/photo-2.svg" alt="photo-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вікно_10 ГОТОВО --> 
+          <div class="modal" data-modal="10">
+            <div class="modal-header">
+              <h1 data-lang="project-conversion-food">Food Icons</h1> 
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class=" modal__cross js-modal-close" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
+            </div> 
+            <div class="maodel-separator-header"></div>
+
+            <div class="modal-main">
+              <div class="modal-left">
+                <div class="modal-rol-all">
+                  <p class="modal-rol" data-lang="modal-rol">My role.</p>
+                  <p class="modal-rol-descr" data-lang="modal-rol-descr-5">Graphic Designer & Vector Conversion</p>
+                </div>
+                <br>
+                <p class="modal-rol" data-lang="project-modal-description">Project description.</p>
+                <p>
+                  <span data-lang="modal-10-text-1">
+                    This project is all about drawing vector icons for food and drink.
+                  </span>
+                  <br>
+                  <span data-lang="modal-10-text-2">
+                    I was inspired by some vector graphics I saw and decided to create my own set of icons to improve my Adobe Illustrator skills.
+                  </span>
+                    <br>
+                </p>
+                <p class="modal-rol" data-lang="project-modal-description">Skills and deliverables</p>
+                <div class="modal-skills">
+                  <div>Adobe Illustrator</div>
+                </div>
+                <div class="maodel-separator"></div>
+                <p class="modal-rol-date" data-lang="modal-data-1">Published on Apr 10, 2025</p>
+              </div>
+              
+              <div class="modal-right">
+                <a href="https://drive.google.com/uc?export=download&id=1952DDJlEQSi6I1fenE4GPTzMMDB_s2Ni" target="_blank" class="modal-file-link">
+                  <span class="file-link" data-lang="modal-file-name-9">Download file (icons.ai)</span>
+                  <i class="ri-file-download-line"></i>
+                </a>
+                <div class="modal-img">
+                  <img src="./assets/images/project-10/photo-1.png" alt="photo-1">
+                </div>
+                <div class="modal-img">
+                  <img src="./assets/images/project-10/photo-2.png" alt="photo-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!--Blog_soon!-->
+      <!--
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+-->
+      
+      <!--Contact-->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title" data-lang="contact-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998567.101541504!2d16.496090186659835!3d51.9242662185495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47009964a4640bbb%3A0x97573ca49cc55ea!2z0J_QvtC70YzRidCw!5e1!3m2!1suk!2spl!4v1779691058227!5m2!1suk!2spl"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+          
+        </section>
+        <!-- Повідомлення -->
+        <div class="alert-banner">
+          <div class="alert-icon">
+            <ion-icon name="warning-outline"></ion-icon>
+          </div>
+          <div class="alert-text">
+            <p>
+              <span data-lang="alert-message">The contact form is temporarily under maintenance.</span>
+              
+              <span data-lang="alert-action">Please contact me via:</span>
+              <div class="alert-text-div">
+                <a href="mailto:sanechek.anisov@gmail.com" target="_blank" class="alert-link">Email</a>
+              </div>
+            </p>
+          </div>
+        </div>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title" data-lang="contact-form-title">Contact Form</h3>
+          <form id="contact-form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input data-lang="form-fullname">
+              <input type="email" name="email" class="form-input" placeholder="Your email address" required data-form-input data-lang="form-email">
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input data-lang="form-message"></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span data-lang="contact-send">Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+  <a href="#top" class="back-to-top" data-back-to-top>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+  <div id="toast-container"></div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/lang.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- Подключение EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</body>
+</html>
